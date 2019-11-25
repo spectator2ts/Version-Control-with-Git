@@ -83,28 +83,33 @@ Dangling commits will eventually be garbage collected.
 
 ## Merging
 ![alt text](Picture5.png)
-*	Merge types:
-    *	Fast-forward merge
-    *	Merge commit
-    *	Squash merge*
-    *	Rebase*
-*	Fast-forward (FF) Merge 
-![alt text](Picture6.png)
-    *	Fast-forward merge is possible if no other commits have been made to the base branch since branching
-    *	Performing an FF merge
-        *	`git checkout master`
-        *	`git merge featureX`
-    *	attempting an FF is default
-        *	`git branch -d featureX`
-*	Merge commit
-    *	Combines the commits at the tips of merged branches
-    *	Places the result in the merge commit
-![alt text](Picture7.png)
-    *	Performing a merge commit
-      *	`git checkout master`
-      *	`git merge featureX` 
-        *	accept or modify the merge message
-        *	optionally you can use git merge --no-ff featureX to always perform non-FF merge
-      * `git branch -d featureX`
-
-
+* Merge Types:
+  * Fast-forward merge
+  * Merge commit
+  * Squash merge
+  * Rebase
+ * Fast-forward (FF) Merge 
+ 
+ ![alt text](Picture6.png)
+  * Fast-forward merge is possible if no other commits have been made to the base branch since branching
+  * Performing an FF merge
+    * `git checkout master`
+    * `git merge featureX`
+      * attempting an FF is default
+    * `git branch -d featureX`
+* Merge commit
+  * Combines the commits at the tips of merged branches
+  * Places the result in the merge commit
+![alt text](Picture7.png)  
+  * Performing a merge commit
+    * `git checkout master`
+    * `git merge featureX`
+      * accept or modify the merge message
+      * optionally you can use git merge --no-ff featureX to always perform non-FF merge
+    * git branch -d featureX
+  
+ 
+ 
+ 
+ 
+ 
