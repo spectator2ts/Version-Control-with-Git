@@ -15,7 +15,7 @@
 * Reference is user-friendly name that points to 
   * A commit SHA-1 hash
   * Another reference
-    * Known as symbolic reference
+   * Known as symbolic reference
 *	`~` refers to a prior commit
   *  `~` or `~1` == parent
   *	 `~2` or `~~` == parent’s parent
@@ -27,12 +27,12 @@
     * `git show HEAD`
 * Tag is a reference/label attached to a specific commit
 ![alt text](Picture1.png)
- 
+
   * Lightweight tag: a simple reference to a commit
   * Annotated tag:
-    * A full Git object that reference a commit
-    * Include tag author information, tag date, tag message, the commit ID
-    * Optionally can be signed and verified with GNU Privacy Guard (GPG)
+     * A full Git object that reference a commit
+     * Include tag author information, tag date, tag message, the commit ID
+     * Optionally can be signed and verified with GNU Privacy Guard (GPG)
 * `git tag` – view all tags in the repository
 *	`git show <tag>` - show information associated with the tag
 *	To tag a commit with a lightweight tag:
@@ -54,9 +54,9 @@
     *	Brach feature X: A, B, C
 *	A branch can have two types:
     * Topic
-      * A feature, a bug fix, a hotfix, a configuration change, etc.
+     * A feature, a bug fix, a hotfix, a configuration change, etc.
     *	Long-lived
-        *  Master, develop, release, etc.
+     * Master, develop, release, etc.
 *	`git branch` – see a list of branches in the local repository, the branch with a * is the branch that you are currently on
 *	`git branch <name>` - create a branch, that only creates a branch label
 *	`git checkout <branch-or-commit>` - check out a branch or a commit (to switch to a branch)
@@ -88,15 +88,14 @@ Dangling commits will eventually be garbage collected.
     *	Merge commit
     *	Squash merge*
     *	Rebase*
-![alt text](Picture6.png)
 *	Fast-forward (FF) Merge 
+![alt text](Picture6.png)
     *	Fast-forward merge is possible if no other commits have been made to the base branch since branching
     *	Performing an FF merge
         *	`git checkout master`
         *	`git merge featureX`
     *	attempting an FF is default
         *	`git branch -d featureX`
-
 *	Merge commit
     *	Combines the commits at the tips of merged branches
     *	Places the result in the merge commit
