@@ -18,6 +18,7 @@
 [here](https://git-scm.com/downloads/guis)
 
 ## Git Locations
+![alt text](Picture1.png)
 * The **working tree** contains the project files for a single commit
 * The **staging area** holds a list of files that will be included in the next commit
 * The **local repository** contains all of the commits of the project
@@ -33,6 +34,7 @@
 * `git log` - view the commit history
   * `git log --oneline` - condensed version of the log
   * `git log -#` - limit the log to the most recent # commits
+![alt text](Picture2.png)  
   
 ## Create a Remote Repository
 * A remote repository is a bare repository
@@ -41,6 +43,8 @@
 
 ## Push to a Remote Repository
 *	Clone: a clone is a local copy of a remote repository
+![alt text](Picture3.png) 
+![alt text](Picture4.png) 
 *	`git clone <url/to/projectname.git> [localprojectname]` – create a local copy of a remote repository
 *	`git remote --verbose` – display information about remote repositories associated with the local repository
 *	`git remote add <reponame> <url>` - add a remote repository
