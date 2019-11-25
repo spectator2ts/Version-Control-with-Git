@@ -106,7 +106,7 @@ Dangling commits will eventually be garbage collected.
     * `git merge featureX`
       * accept or modify the merge message
       * optionally you can use git merge --no-ff featureX to always perform non-FF merge
-    * git branch -d featureX
+    * `git branch -d featureX`
   
  
  
